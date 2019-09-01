@@ -1,0 +1,41 @@
+{
+  "name": "next-server-docker",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "build": "next build",
+    "dev": "nodemon server.js",
+    "test": "mocha"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "next",
+    "next.js",
+    "react"
+  ],
+  "author": "Jean Yang",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "celebrate": "^7.0.4",
+    "express": "^4.16.3",
+    "joi": "^13.1.2",
+    "next": "^5.1.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "nodemon": "^1.17.3"
+  }
+}

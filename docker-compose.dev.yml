@@ -1,0 +1,16 @@
+version: '3'
+services:
+  node1:
+    build:
+      context: ./
+    links:
+        - redis
+    ports:
+        - "4000:4000"
+    volumes:
+        - ./:/var/www/app
+    command: npm run dev
+  redis:
+    image: redis:4-alpine
+    ports:
+        - "6379:6379"
